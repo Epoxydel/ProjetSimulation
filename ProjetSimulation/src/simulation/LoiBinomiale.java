@@ -4,6 +4,8 @@
 
 package simulation;
 
+import exception.ErreurEnsemble;
+
 /**
  * Effectue la gestion d'une loi binomiale
  * @author lucas.gremont
@@ -16,6 +18,9 @@ public class LoiBinomiale {
 	
 	/** la probabilité de réussite */
 	double p;
+	
+	/** la probabilité d'un échec */
+	double q;
 	
 	/**
 	 * Constructeur de la classe, initialisant les attributs de la classe.
@@ -32,9 +37,14 @@ public class LoiBinomiale {
 		}
 		this.n = n;
 		this.p = p;
+		this.q = 1-p;
 	}
 	
 	/**
-	 * Simule 
+	 * Calcule la probabilité d'obtenir X, un certain nombre de réussites,
+	 * avec la loi binomiale créée
+	 * @param X le nombre de réussites à calculer
+	 * @return la probabilité d'avoir X
+	 * @throws ErreurEnsemble si X n'appartient pas à l'ensemble {0,...,n}
 	 */
 }
