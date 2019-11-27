@@ -4,17 +4,19 @@
  */
 package simulation;
 
+import exception.ErreurParametreNegatif;
+
 /**
  * @author info2
  */
 public class LoiExponentielle {
 
 	/**
-	 * TODO faire
-	 * @param x
-	 * @return
+	 * vérifie si la valeur est positif
+	 * @param x , valeur à vérifier
+	 * @return true si x > 0 et false si x < 0 
 	 */
-	public boolean verifValeur (int x) {
+	public static boolean verifValeur (double x) {
 		return x > 0 ;
 	}
 	
@@ -23,13 +25,13 @@ public class LoiExponentielle {
 	 * @param x , position 
 	 * @param lambda, paramètre de la lois
 	 * @return le résultat de la lois
+	 * @throws ErreurParametreNegatif 
 	 */
-	public double loiExpo(int x, double lambda) {
-		
-		if (!verifValeur(x)) {
-			//TODO finir
+	public static double loiExpo(double lambda) throws ErreurParametreNegatif {
+		if (!verifValeur(lambda)) {
+			throw new ErreurParametreNegatif();
 		}
-		return 1-Math.exp(-lambda*x);
+		return (-1/lambda)* Math.log(Math.random()) ;
 	}
 	
 }
