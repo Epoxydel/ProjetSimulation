@@ -4,6 +4,8 @@
 
 package simulation;
 
+import exception.ErreurEnsemble;
+
 /**
  * Effectue la gestion d'une loi binomiale
  * @author lucas.gremont
@@ -35,6 +37,16 @@ public class LoiBinomiale {
 	}
 	
 	/**
-	 * Simule 
+	 * Simule le comportement de la loi
+	 * @return le nombre de succès obtenus
 	 */
+	public double simuler(int k) {
+		int nbSucces = 0;
+		for (int i = 0; i < n; i++) {
+			if (Math.random() <= p) {
+				nbSucces++;
+			}
+		}
+		return nbSucces;
+	}
 }
