@@ -25,6 +25,7 @@ public class Sauvegarder {
 			for (int i = 0; i < liste.size(); i++) {
 				fichier.println(liste.get(i).toString() + ";");
 			}
+			ecritureReussie = true;
 		} catch (IOException e) {
 			ecritureReussie = false;
 		}
