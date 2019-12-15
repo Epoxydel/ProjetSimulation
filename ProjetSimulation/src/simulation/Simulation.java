@@ -24,11 +24,16 @@ public class Simulation {
 	 * @param listeProba
 	 * @return
 	 */
-	public static double loiDiscrete(double[] ensemble, double[] listeProba) {
-		double alea;
-		int index;
+	public static double loiDiscrete(double[] ensemble, double[] listeProba) 
+		throws IllegalArgumentException{
+		double alea; // variable aléatoire
+		int index; 
+		double sommeProba;
 		
-		listeProba = normaliserProba(listeProba); // la somme sera = 1
+		sommeProba = somme(listeProba);
+		if (sommeProba != 1) {
+			throw new IllegalArgumentException("La somme des proba doit être = 1 (somme = "+sommeProbae+").");
+		}
 		
 		alea = Math.random();
 		index = recupIndex(listeProba, alea);
@@ -50,6 +55,7 @@ public class Simulation {
 	
 	
 	/**
+	 * /!\ n'est plus utilisé
 	 * Si la somme est différente de 1, 
 	 * alors modifie les valeurs pour que cela soit vrai
 	 * @return
