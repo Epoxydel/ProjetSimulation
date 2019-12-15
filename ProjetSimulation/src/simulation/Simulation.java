@@ -5,21 +5,21 @@ import java.lang.Math;
 public class Simulation {
 
 	/**
-	 * Ne vérifie pas les erreurs de paramètres (ensemble vide, NaN ...) 
+	 * Ne vÃ©rifie pas les erreurs de paramÃ¨tres (ensemble vide, NaN ...) 
 	 * @param ensemble
 	 * @return
 	 */
 	public static double loiUniformeDiscrete(double[] ensemble) {
 		int rand;
 		
-		// le type cast arrondi à l'inférieur
+		// le type cast arrondi Ã  l'infÃ©rieur
 		rand = (int) (Math.random()*ensemble.length);
 				
 		return ensemble[rand];
 	}
 	
 	/**
-	 * Ne vérifie pas les erreurs de paramètres (ensemble vide, NaN ...) 
+	 * Ne vÃ©rifie pas les erreurs de paramÃ¨tres (ensemble vide, NaN ...) 
 	 * @param ensemble
 	 * @param listeProba
 	 * @return
@@ -28,10 +28,10 @@ public class Simulation {
 		double alea;
 		int index;
 		
-		normaliserProba(listeProba); // la somme sera = 1
+		listeProba = normaliserProba(listeProba); // la somme sera = 1
 		
 		alea = Math.random();
-		index = recupIndex(ensemble, listeProba, alea);
+		index = recupIndex(listeProba, alea);
 				
 		return ensemble[index];
 	}
@@ -50,7 +50,7 @@ public class Simulation {
 	
 	
 	/**
-	 * Si la somme est différente de 1, 
+	 * Si la somme est diffÃ©rente de 1, 
 	 * alors modifie les valeurs pour que cela soit vrai
 	 * @return
 	 */
@@ -75,7 +75,7 @@ public class Simulation {
 	
 
 
-	private static int recupIndex(double[] ensemble, double[] listeProba, double alea) {
+	private static int recupIndex(double[] listeProba, double alea) {
 		int i;
 		double probaCumul;
 		
@@ -122,13 +122,13 @@ public class Simulation {
 	public static void verifLoiUniformeDiscrete(double[] ensemble) 
 		throws IllegalArgumentException{
 		verifEnsembleVide(ensemble);
-		// TODO vérif NaN, POSITIVE_INFINITY ...
+		// TODO vÃ©rif NaN, POSITIVE_INFINITY ...
 	}
 		
 	private static void verifEnsembleVide(double[] ensemble) 
 	throws IllegalArgumentException {
 		if (ensemble.length == 0) {
-			throw new IllegalArgumentException("Erreur : ensemble non vide nécessaire");
+			throw new IllegalArgumentException("Erreur : ensemble non vide nÃ©cessaire");
 		}
 	}
 	
