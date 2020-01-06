@@ -158,12 +158,12 @@ public class frm_loiDiscrete extends javax.swing.JFrame {
         jLabel2.setBounds(100, 170, 280, 17);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel1.setText("(/!\\ la somme des probabilité dois valoir 1)");
+        jLabel1.setText("(/!\\ la somme des probabilités doit valoir 1)");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(290, 160, 280, 40);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel3.setText("ensemble séparer par un /");
+        jLabel3.setText("ensemble séparé par un /");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(100, 100, 280, 17);
 
@@ -316,7 +316,7 @@ public class frm_loiDiscrete extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_argumentSimulationActionPerformed
 
     private void btn_sauvegarderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sauvegarderActionPerformed
-        Sauvegarder.sauvegarder(tbresultat, "hello.csv");
+        Sauvegarder.sauvegarder(tbresultat, "sauvegarde/Discrete.csv");
     }//GEN-LAST:event_btn_sauvegarderActionPerformed
     
     /**

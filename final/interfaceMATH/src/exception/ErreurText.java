@@ -5,13 +5,13 @@
 package exception;
 
 /**
- * Class créant un objet Exception pour les problémes lors d'entrée de String dans les paramètres
+ * Class crÃ©ant un objet Exception pour les problÃ¨mes lors d'entrÃ©e de String dans les paramatres
  * @author info2
  */
 public class ErreurText extends Exception {
 
 	/**
-	 * Constructeur par défault
+	 * Constructeur par dÃ©fault
 	 * Renvoi :
 	 * "Il ne faut pas rentrer des textes."
 	 */

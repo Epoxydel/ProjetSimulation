@@ -247,7 +247,7 @@ public class frm_loiExponentielle extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_argumentSimulationActionPerformed
 
     private void btn_sauvegarderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sauvegarderActionPerformed
-        Sauvegarder.sauvegarder(tbresultat, "hello.csv");
+        Sauvegarder.sauvegarder(tbresultat, "sauvegarde/exponentielle.csv");
     }//GEN-LAST:event_btn_sauvegarderActionPerformed
     
     /**

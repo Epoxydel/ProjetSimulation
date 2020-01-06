@@ -190,7 +190,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="entrez l&apos;esperance"/>
+            <Property name="text" type="java.lang.String" value="entrez l&apos;esp&#xe9;rance"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -234,9 +234,14 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="Background_image">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="Z:\javanetbeans\interfaceMATH\depositphotos_160456734-stock-photo-green-blackboard-with-math-formula.jpg"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="0" width="630" height="520"/>
+              <AbsoluteConstraints x="-2" y="-6" width="630" height="520"/>
             </Constraint>
           </Constraints>
         </Component>

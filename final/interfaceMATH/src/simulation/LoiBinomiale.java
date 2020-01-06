@@ -22,10 +22,10 @@ public class LoiBinomiale {
 	 */
 	public static void LoiBinomiale(int n, double p) throws ErreurEnsemble{
 		if (n <= 0) {
-			throw new ErreurEnsemble("Erreur : le param�tre n n'appartient pas � l'ensemble N* !");
+			throw new ErreurEnsemble("Erreur : le paramètre n n'appartient pas à l'ensemble N* !");
 		}
 		if (p < 0 || p > 1) {
-			throw new ErreurEnsemble("Erreur : le param�tre p n'appartient pas � l'ensemble [0;1] !");
+			throw new ErreurEnsemble("Erreur : le paramètre p n'appartient pas à l'ensemble [0;1] !");
 		}
 	}
 	

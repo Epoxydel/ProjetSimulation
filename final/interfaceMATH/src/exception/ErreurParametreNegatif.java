@@ -5,18 +5,18 @@
 package exception;
 
 /**
- * Class créant un objet Exception pour les problémes de paramètre négatif
+ * Class crï¿½ant un objet Exception pour les problï¿½mes de paramï¿½tre nï¿½gatif
  * @author info2
  */
 public class ErreurParametreNegatif extends Exception {
 
 	/**
-	 * Constructeur par défault
+	 * Constructeur par dï¿½fault
 	 * Renvoi :
-	 * "Il ne faut pas rentrer un paramètre négatif."
+	 * "Il ne faut pas rentrer un paramï¿½tre nï¿½gatif."
 	 */
 	public ErreurParametreNegatif() {
-		super("Il ne faut pas rentrer un paramètre négatif.");
+		super("Il ne faut pas rentrer un paramÃ¨tre nÃ©gatif.");
 	}
 
 	/**
@@ -30,22 +30,22 @@ public class ErreurParametreNegatif extends Exception {
 	/**
 	 * Constructeur permettant d'afficher un message de l'erreur avec la valeur ( int)  incorrecte
 	 * Renvoi :
-	 * "La valeur [valeur] ne doit pas être une valeur négative."
-	 * @param valeur , valeur incorrecte rentrée
+	 * "La valeur [valeur] ne doit pas ï¿½tre une valeur nï¿½gative."
+	 * @param valeur , valeur incorrecte rentrï¿½e
 	 */
 	public ErreurParametreNegatif(int valeur ) {
-		super("La valeur " + valeur + " ne doit pas être une valeur négative.");
+		super("La valeur " + valeur + " ne doit pas Ã¨tre une valeur nÃ©gative.");
 	}
 	
 	
 	/**
 	 * Constructeur permettant d'afficher un message de l'erreur avec la valeur ( double ) incorrecte
 	 * Renvoi :
-	 * "La valeur [valeur] ne doit pas être une valeur négative."
-	 * @param valeur , valeur incorrecte rentrée
+	 * "La valeur [valeur] ne doit pas ï¿½tre une valeur nï¿½gative."
+	 * @param valeur , valeur incorrecte rentrï¿½e
 	 */
 	public ErreurParametreNegatif(double valeur ) {
-		super("La valeur " + valeur + " ne doit pas être une valeur négative.");
+		super("La valeur " + valeur + " ne doit pas Ãªtre une valeur nÃ©gative.");
 	}
 
 }

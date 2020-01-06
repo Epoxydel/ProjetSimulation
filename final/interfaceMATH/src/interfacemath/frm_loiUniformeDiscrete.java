@@ -45,7 +45,7 @@ public class frm_loiUniformeDiscrete extends javax.swing.JFrame {
         lb_nomLoi = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         ta_resultat = new javax.swing.JTextArea();
-        Background_image = new javax.swing.JLabel();
+        Background_image1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(620, 540));
@@ -147,8 +147,10 @@ public class frm_loiUniformeDiscrete extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(10, 330, 580, 96);
-        jPanel1.add(Background_image);
-        Background_image.setBounds(-2, -6, 630, 520);
+
+        Background_image1.setIcon(new javax.swing.ImageIcon("Z:\\javanetbeans\\interfaceMATH\\depositphotos_160456734-stock-photo-green-blackboard-with-math-formula.jpg")); // NOI18N
+        jPanel1.add(Background_image1);
+        Background_image1.setBounds(-2, -6, 630, 520);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -249,7 +251,7 @@ public class frm_loiUniformeDiscrete extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_argumentSimulationActionPerformed
 
     private void btn_sauvegarderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sauvegarderActionPerformed
-        Sauvegarder.sauvegarder(tbresultat, "hello.csv");
+        Sauvegarder.sauvegarder(tbresultat, "sauvegarde/UniformeDiscrete.csv");
     }//GEN-LAST:event_btn_sauvegarderActionPerformed
     
     /**
@@ -289,7 +291,7 @@ public class frm_loiUniformeDiscrete extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Background_image;
+    private javax.swing.JLabel Background_image1;
     private javax.swing.JButton btn_calculer;
     private javax.swing.JButton btn_retour;
     private javax.swing.JButton btn_sauvegarder;

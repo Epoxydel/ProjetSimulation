@@ -201,7 +201,12 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="Background_image">
+        <Component class="javax.swing.JLabel" name="Background_image1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="Z:\javanetbeans\interfaceMATH\depositphotos_160456734-stock-photo-green-blackboard-with-math-formula.jpg"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="-2" y="-6" width="630" height="520"/>

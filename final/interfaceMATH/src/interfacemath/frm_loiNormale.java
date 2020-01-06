@@ -8,6 +8,7 @@ package interfacemath;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
+import simulation.Sauvegarder;
 
 /**
  *
@@ -156,7 +157,7 @@ public class frm_loiNormale extends javax.swing.JFrame {
         tf_argumentEnsemble.setBounds(130, 170, 160, 30);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel1.setText("entrez l'esperance");
+        jLabel1.setText("entrez l'espérance");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(130, 150, 280, 17);
 
@@ -173,8 +174,10 @@ public class frm_loiNormale extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(10, 330, 580, 96);
+
+        Background_image.setIcon(new javax.swing.ImageIcon("Z:\\javanetbeans\\interfaceMATH\\depositphotos_160456734-stock-photo-green-blackboard-with-math-formula.jpg")); // NOI18N
         jPanel1.add(Background_image);
-        Background_image.setBounds(0, 0, 630, 520);
+        Background_image.setBounds(-2, -6, 630, 520);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -266,7 +269,7 @@ public class frm_loiNormale extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_argumentSimulationActionPerformed
 
     private void btn_sauvegarderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sauvegarderActionPerformed
-        // TODO add your handling code here:
+        Sauvegarder.sauvegarder(tbresultat, "sauvegarde/Normale.csv");
     }//GEN-LAST:event_btn_sauvegarderActionPerformed
 
     private void tf_argumentVarianceFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tf_argumentVarianceFocusGained
